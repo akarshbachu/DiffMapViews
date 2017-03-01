@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         PolylineOptions polylineOptions=new PolylineOptions().geodesic(true).add(nallakunta).add(xyz).width(15);
         m_map.addPolyline(polylineOptions);
 
+
         CircleOptions circleOptions=new CircleOptions().center(nallakunta).radius(20).strokeColor(Color.BLUE).fillColor(Color.CYAN);//radius in meters
         m_map.addCircle(circleOptions);
     }
